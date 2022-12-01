@@ -15,7 +15,7 @@ a{
 }
 /* INDEX */
 /* HEADER */
-header{
+.iheader{
      /* width: 100vh;  */
     padding-top: 5px;
     padding-left: 40px;
@@ -27,16 +27,16 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.header ul{
+.iheader ul{
     padding-top: 5px;
     /* font-size: 20px; */
 }
-.header img{
+.iheader img{
     width: 100px;
     height: 100px;
 }
 @media (min-width: 768px){
-    .header{
+    .iheader{
         width: 100%;
         justify-content: space-between;
     }
@@ -46,7 +46,7 @@ header{
         justify-content: space-around;
         align-items: center;
     }
-    .header ul{
+    .iheader ul{
         font-size: 20px;
     }
 }
@@ -287,7 +287,7 @@ footer{
 }
 
 /* CATÁLOGO */
-.cat_hero{
+body.catalogo{
     background-image: url(../image/fondo\ catalogo1.jpg);
     background-size: 100%;
     background-attachment: fixed;
