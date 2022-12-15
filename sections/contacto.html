@@ -5,70 +5,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Sisa Roses</title>
     <link rel="stylesheet" href="../estilo/style.css">
 </head>
 <body>
-    <header>
-        <H1>SISA ROSES</H1>
-        <ul class="inicio">
-            <li><a href="../index.html">INICIO</a></li>
-            <li><a href="../sections/catalogo.html">CATALOGO </a></li>
-            <li><a href="../sections/arreglo.html">ARREGLOS</a></li>
-            <li><a href="../sections/nosotros.html">NOSOTROS</a></li>
-        </ul> 
-    </Header>
-    <main class="formulario">
-        <h2>CONTACTOS</h2>
-        <form action="hola"></form>
-        <div>
-            <label for="Usuario">Nombre</label>
-            <input type="text" id="Usuario" placeholder="Ejemplo: Jose Navarro" required>
+    <header class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../image/Sisa_Roses-removebg-preview.png" height="66px" width="115px" class="inicio" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../sections/catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../sections/arreglos.html">Bouquet</a>
+                    </li>                       
+                    <li class="nav-item">
+                        <a class="nav-link" href="../sections/nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="Búsqueda">
+                <input class="form-control me-2" type="Búsqueda" placeholder="Búsqueda" aria-label="Búsqueda">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
-        <div>
-            <label for="Mail">Correo</label>
-            <input type="email" id="email" placeholder="usuario@correo.com" required>
+    </header>
+    <main>
+        <div class="imgc container-fluid page-header py-5 mb-5">
+            <div class="container text-center py-5">
+                <h1 class="display-3 text-white mb-4 animated slideInDown">Contactos</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb justify-content-center mb-0">
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Paginas</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+                    </ol>
+                </nav>
+            </div>
         </div>
-        <div>
-            <label for="">Área</label>
-            <select name="" id="">
-                <option value="">Administración</option>
-                <option value="">Ventas</option>
-                <option value="">Servicio al cliente</option>
-                <option value="">Producción</option>
-                <option value="">Otros</option>
-            </select>
-        </div>
-        <div>
-            <label for="asunto">Asunto del Mensaje</label>
-            <input type="text" id="asunto" required>
-        </div>
-        <div>
-            <label for="mensaje">Mensaje</label>
-            <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-            <input type="submit">
-            <input type="reset">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <p class="fs-5 fw-bold text-primary">Ponte en contacto</p>
+                        <h1 class="display-5 mb-5 text-black">Si tiene alguna consulta, contáctenos</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Nombre</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Correo</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <label for="subject">Asunto</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Mensaje</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary py-3 px-4" type="submit">Enviar Mensaje</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
+                        <div class="position-relative rounded overflow-hidden h-100">
+                            <iframe class="position-relative w-100 h-100"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d855.061883581219!2d-78.21756097651676!3d0.04867087259553781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1670741301860!5m2!1ses!2sec"
+                            frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
-        <!--Pie de pagina-->
-        <div>
-            <span>REDES SOCIALES</span>
-            <ul>
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Tik  Tok</a></li>
-            </ul>
-        </div>
-        <div>
-            <span>ESCRIBENOS POR:</span>
-                <ul>
-                    <li><a href="">WhatsApp</a></li>
-                    <li><a href="">Messenger</a></li>
-                </ul>
-        </div>
-    </footer>  
+        <section class="container">
+            <div class="fotcat container-fluid bg-secondary text-dark mt-1 pt-1">
+                <div class="row px-xl-5 pt-5">
+                    <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                        <a href="" class="text-decoration-none">
+                            <h1 class="mb-4 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border border-white px-3 mr-1">Sisa</span> Roses</h1>
+                        </a>
+                        <p>Somos una empresa ubicada en Ecuador-Tabacundo, comprometidos en cuidar el medio ambiente y a nuestros colaboradores, produciendo rosas de calidad para el mundo.</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Rocafuerte y Luis Freire S/N Tabacundo - Ecuador</p>
+                        <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>sales@sisaflowers.com</p>
+                        <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>(593)978848822 / 2356487</p>
+                    </div>
+                    <div class="col-lg-8 col-md-12">
+                        <div class="row">
+                            <div class="col-md-4 mb-5">
+                                <h5 class="font-weight-bold text-dark mb-4">Accesos</h5>
+                                <div class="d-flex flex-column justify-content-start">
+                                    <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                                    <a class="text-dark mb-2" href="shop.html"><i class="fa fa-angle-right mr-2"></i>Bouquets</a>
+                                    <a class="text-dark mb-2" href="detail.html"><i class="fa fa-angle-right mr-2"></i>Nosotros</a>
+                                    <a class="text-dark mb-2" href="cart.html"><i class="fa fa-angle-right mr-2"></i>Promociones</a>
+                                    <a class="text-dark mb-2" href="checkout.html"><i class="fa fa-angle-right mr-2"></i>Contactos</a>
+                                    <a class="text-dark" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Catálogo</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-5">
+                                <h5 class="font-weight-bold text-dark mb-4">Boletín</h5>
+                                <p>Únase para estar en contacto y obtener ofertas especiales y únicas.</p>
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control border-0 py-1" placeholder="Nombre" required="required" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control border-0 mt-1 py-1" placeholder="ejemplo@mail.com"
+                                            required="required" />
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-dark mt-2">Suscribir</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logf"><img src="../image/Sisa_Roses-removebg-preview.png" width="150px" height="96" alt=""></div>
+            <div class="row">
+                <a href="#" class="col-2 offset-2"><img src="../image/tik-tok.jpg" width="47px" height="46" alt=""></a>
+                <a href="#" class="col-2"> <img src="../image/Instagram1).png" width="41px" height="40" alt=""></a>
+                <a href="#" class="col-2"><img src="../image/facebook.jpg" width="41px" height="40" alt=""></a>
+                <a href="#" class="col-2"><img src="../image/whatsapp1.jpg" width="41px" height="40" alt=""></a>
+            </div>
+        </section> 
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 </html>
